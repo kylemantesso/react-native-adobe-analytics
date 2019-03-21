@@ -247,6 +247,7 @@
 					"$(SRCROOT)/../../react-native/React",
 					"$(PROJECT_DIR)/../../../ios/Pods/AdobeMobileSDK/AdobeMobileLibrary",
 					"$(PROJECT_DIR)/../../../ios/Frameworks",
+					"$(SRCROOT)/../../../ios/**",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -268,6 +269,7 @@
 					"$(SRCROOT)/../../react-native/React",
 					"$(PROJECT_DIR)/../../../ios/Pods/AdobeMobileSDK/AdobeMobileLibrary",
 					"$(PROJECT_DIR)/../../../ios/Frameworks",
+					"$(SRCROOT)/../../../ios/**",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";

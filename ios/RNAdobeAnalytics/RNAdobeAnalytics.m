@@ -64,7 +64,7 @@ RCT_EXPORT_METHOD(marketingCloudId:(RCTPromiseResolveBlock)resolve rejecter:(RCT
     if (mcid) {
         resolve(mcid);
     } else {
-        reject(mcid);
+        reject(@"no_marketing_cloud_id", @"The marketing cloud id is nil", nil);
     }
 }
 
@@ -90,8 +90,5 @@ RCT_EXPORT_METHOD(trackTimedActionUpdate: (NSString *)action contextData:(NSDict
 RCT_EXPORT_METHOD(trackTimedActionEnd: (NSString *)action) {
     [ADBMobile trackTimedActionEnd:action logic: nil];
 }
-
-
-
 
 @end
